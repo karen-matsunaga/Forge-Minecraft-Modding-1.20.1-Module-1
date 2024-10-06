@@ -2,4 +2,4 @@
 
 * Install Eclipse Temurin JDK, Forge Minecraft 1.20.1 and GitHub Repository.
 
-## Udemy - Credits: Modding By Kaupenjoe: Minecraft Modding 1.20.X for Forge
+### Udemy - Credits: Modding By Kaupenjoe: Minecraft Modding 1.20.X for Forge
