@@ -1,6 +1,7 @@
 package net.karen.mccourse;
 
 import com.mojang.logging.LogUtils;
+import net.karen.mccourse.block.ModBlocks;
 import net.karen.mccourse.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -28,6 +29,9 @@ public class MCCourseMod {
         // Register items
         ModItems.register(modEventBus);
 
+        // Register blocks
+        ModBlocks.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -43,10 +47,21 @@ public class MCCourseMod {
     // To show all items in creative mode tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            // First item
             event.accept(ModItems.ALEXANDRITE);
+            // Second item
             event.accept(ModItems.RAW_ALEXANDRITE);
 
         }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            // First item
+            event.accept(ModBlocks.ALEXANDRITE_BLOCK);
+
+            // Second item
+            event.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK);
+        }
+
     }
 
 
