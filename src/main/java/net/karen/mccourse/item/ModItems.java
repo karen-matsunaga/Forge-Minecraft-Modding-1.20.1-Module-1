@@ -22,8 +22,6 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
 
-
-
     // Insert in MCCourseMod.java file
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

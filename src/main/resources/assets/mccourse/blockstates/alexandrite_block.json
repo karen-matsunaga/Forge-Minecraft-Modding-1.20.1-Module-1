@@ -1,8 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "mccourse:block/alexandrite_block",
-
+      "model": "mccourse:block/alexandrite_block"
     }
   }
 }
