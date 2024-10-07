@@ -2,6 +2,7 @@ package net.karen.mccourse;
 
 import com.mojang.logging.LogUtils;
 import net.karen.mccourse.block.ModBlocks;
+import net.karen.mccourse.item.ModCreativeModeTabs;
 import net.karen.mccourse.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -26,11 +27,15 @@ public class MCCourseMod {
     public MCCourseMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
+        // Register Creative Mode Tab
+        ModCreativeModeTabs.register(modEventBus);
+
         // Register items
         ModItems.register(modEventBus);
 
         // Register blocks
         ModBlocks.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
 
