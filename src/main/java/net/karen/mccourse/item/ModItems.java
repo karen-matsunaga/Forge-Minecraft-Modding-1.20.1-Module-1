@@ -13,9 +13,12 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, MCCourseMod.MOD_ID);
 
     // Register item in game
+
+    // First item
     public static final RegistryObject<Item> ALEXANDRITE = ITEMS.register("alexandrite",
             () -> new Item(new Item.Properties()));
 
+    // Second item
     public static final RegistryObject<Item> RAW_ALEXANDRITE = ITEMS.register("raw_alexandrite",
             () -> new Item(new Item.Properties()));
 

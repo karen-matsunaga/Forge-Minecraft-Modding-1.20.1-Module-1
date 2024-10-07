@@ -43,7 +43,9 @@ public class MCCourseMod {
     // To show all items in creative mode tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            // First item
             event.accept(ModItems.ALEXANDRITE);
+            // Second item
             event.accept(ModItems.RAW_ALEXANDRITE);
 
         }
