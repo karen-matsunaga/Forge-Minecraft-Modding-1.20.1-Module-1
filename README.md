@@ -1,3 +1,3 @@
-# 2024-10-11 - 3. Adding Custom Blocks
-* Adding name, texture, and, registry blocks in game.
+# 2024-10-11 - 6. Adding Custom Recipes
+* Adding recipes on items and ores in game.
 ## Udemy - Credits: Modding By Kaupenjoe: Minecraft Modding 1.20.X for Forge
