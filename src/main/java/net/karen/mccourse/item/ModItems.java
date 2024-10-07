@@ -1,6 +1,7 @@
 package net.karen.mccourse.item;
 
 import net.karen.mccourse.MCCourseMod;
+import net.karen.mccourse.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,6 +21,10 @@ public class ModItems {
     // Second item
     public static final RegistryObject<Item> RAW_ALEXANDRITE = ITEMS.register("raw_alexandrite",
             () -> new Item(new Item.Properties()));
+
+    // Third item
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(512)));
 
 
     // Insert in MCCourseMod.java file
