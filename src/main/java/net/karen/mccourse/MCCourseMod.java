@@ -55,10 +55,10 @@ public class MCCourseMod {
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            // First item
+            // First block
             event.accept(ModBlocks.ALEXANDRITE_BLOCK);
 
-            // Second item
+            // Second block
             event.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK);
         }
 
