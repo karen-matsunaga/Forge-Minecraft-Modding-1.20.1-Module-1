@@ -27,6 +27,9 @@ public class ModCreativeModeTabs {
                         // Custom Advanced Item
                         output.accept(ModItems.METAL_DETECTOR.get());
 
+                        // Custom Advanced Block
+                        output.accept(ModBlocks.SOUND_BLOCK.get());
+
                         // Blocks
                         output.accept(ModBlocks.ALEXANDRITE_BLOCK.get());
                         output.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK.get());

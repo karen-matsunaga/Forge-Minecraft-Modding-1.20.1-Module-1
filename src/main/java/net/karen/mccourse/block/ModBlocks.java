@@ -1,6 +1,7 @@
 package net.karen.mccourse.block;
 
 import net.karen.mccourse.MCCourseMod;
+import net.karen.mccourse.block.custom.SoundBlock;
 import net.karen.mccourse.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -57,6 +58,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> NETHER_ALEXANDRITE_ORE = registerBlock("nether_alexandrite_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
+
+    // Seventh block
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    .strength(5f).requiresCorrectToolForDrops()));
 
 
 

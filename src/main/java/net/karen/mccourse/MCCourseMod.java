@@ -22,7 +22,7 @@ public class MCCourseMod {
 
     public static final String MOD_ID = "mccourse";
 
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public MCCourseMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
@@ -67,6 +67,9 @@ public class MCCourseMod {
 
             // Second block
             event.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK);
+
+            // Custom Advanced Block
+            event.accept(ModBlocks.SOUND_BLOCK);
 
             // Ores
             event.accept(ModBlocks.ALEXANDRITE_ORE);
