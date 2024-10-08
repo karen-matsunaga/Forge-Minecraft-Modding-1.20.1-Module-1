@@ -1,6 +1,7 @@
 package net.karen.mccourse.item;
 
 import net.karen.mccourse.MCCourseMod;
+import net.karen.mccourse.item.custom.FuelItem;
 import net.karen.mccourse.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -29,6 +30,10 @@ public class ModItems {
     // Foods
     public static final RegistryObject<Item> KOHLRABI = ITEMS.register("kohlrabi",
             () -> new Item(new Item.Properties().food(ModFoodProperties.KOHLRABI)));
+
+    // Fuels
+    public static final RegistryObject<Item> PEAT_BRICK = ITEMS.register("peat_brick",
+            () -> new FuelItem(new Item.Properties(), 200));
 
 
     // Insert in MCCourseMod.java file

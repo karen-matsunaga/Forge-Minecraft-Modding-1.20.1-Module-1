@@ -43,6 +43,9 @@ public class ModCreativeModeTabs {
                         // Foods
                         output.accept(ModItems.KOHLRABI.get());
 
+                        // Fuels
+                        output.accept(ModItems.PEAT_BRICK.get());
+
                     }).build());
 
     // Second Creative Mode Tab
