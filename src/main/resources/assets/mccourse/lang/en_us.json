@@ -19,5 +19,11 @@
 
   "item.mccourse.kohlrabi": "Kohlrabi",
 
-  "item.mccourse.peat_brick": "Peat Brick"
+  "item.mccourse.peat_brick": "Peat Brick",
+
+  "tooltip.mccourse.metal_detector.tooltip.shift": "Right Click on Blocks to find Valuables!",
+  "tooltip.mccourse.metal_detector.tooltip": "Press §eSHIFT§r for more Information",
+
+  "tooltip.mccourse.sound_block": "Plays nice sounds when walking or right-clicking."
+
 }
