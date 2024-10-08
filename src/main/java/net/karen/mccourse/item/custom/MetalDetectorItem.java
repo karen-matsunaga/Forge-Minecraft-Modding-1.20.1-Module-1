@@ -1,5 +1,6 @@
 package net.karen.mccourse.item.custom;
 
+import net.karen.mccourse.util.ModTags;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
@@ -93,9 +94,9 @@ public class MetalDetectorItem extends Item {
     }
 
     // Custom method that identifies all blocks added it is
+    // All blocks added in metal_detector_valuables.json
     private boolean isValuableBlock(BlockState blockState) {
-        return blockState.is(Blocks.IRON_ORE) || blockState.is(Blocks.DEEPSLATE_IRON_ORE)
-                || blockState.is(Blocks.DIAMOND_ORE);
+        return blockState.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
     }
 
 }
