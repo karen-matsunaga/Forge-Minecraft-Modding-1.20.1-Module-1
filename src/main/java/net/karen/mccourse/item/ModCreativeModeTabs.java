@@ -40,6 +40,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.END_STONE_ALEXANDRITE_ORE.get());
                         output.accept(ModBlocks.NETHER_ALEXANDRITE_ORE.get());
 
+                        // Foods
+                        output.accept(ModItems.KOHLRABI.get());
+
                     }).build());
 
     // Second Creative Mode Tab
